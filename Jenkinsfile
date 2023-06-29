@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'github_creds', url: 'https://github.com/seeit99/JupyterPOC'
+                git branch: 'main', credentialsId: 'github_creds', url: 'https://github.com/seeit99/tf-tuts'
             }
         }
         stage('Terraform init') {
